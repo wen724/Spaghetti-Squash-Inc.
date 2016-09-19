@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-	<html>
+	<html lang="zxx">
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			<title>About Us</title>
 			<link rel="stylesheet" href="main.css">
 		</head>
-
-		<header>
-			<h1>Spaghetti Squash, Inc.</h1>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="recipes.html">Recipes</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="newsletter.html">Newsletter</a></li>
-					</ul>
-				</nav>
-		</header>
-
 		<body>
+			<header>
+				<h1>Spaghetti Squash, Inc.</h1>
+					<nav itemscope itemtype="http://schema.org">
+						<h2>Navigation</h2>
+						<ul>
+							<li itemprop="url"><a href="homepage.html">Home</a></li>
+							<li itemprop="url"><a href="recipes.html">Recipes</a></li>
+							<li itemprop="url"><a href="about.html">About Us</a></li>
+							<li itemprop="url"><a href="contactus.html">Contact Us</a></li>
+						</ul>
+					</nav>
+			</header>
+		
 			<h2>About Us</h2>
 			<section>
 				<h3>Company Bio</h3>
@@ -30,13 +30,27 @@
 						<p>Processed foods are foods that are packaged in boxes, cans or bags.</p>
 					</aside>
 			</section>
-			<footer>
-				<address>
-					Spaghetti Squash, Inc. |
-					8444 N Walker Ave| 
-					Someplace, CA 95876 </br>
-					1-888-644-9876 |
-					<mark>email@spaghettisquashinc.com</mark>
+			<section itemscope itemtype="http://schema.org">
+				<h3>Resources</h3>
+					<ul>
+						<li itemprop="url"><a href="http://www.foodnetwork.com/" title="foodnetwork.com" target="_blank">Food Network</a></li>
+						
+						<li itemprop="url"><a href="http://allrecipes.com/" title="Allrecipes.com" target="_blank">Allrecipes</a></li>
+						
+						<li itemprop="url"><a href="http://www.delish.com/" title="Delish.com" target="_blank">Delish</a></li>
+				
+					</ul>
+			</section>
+
+			<footer itemscope itemtype="http://schema.org/LocalBusiness">
+				<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="name">Spaghetti Squash, Inc. |</span>
+					<span itemprop="streetAddress">8444 N Walker Ave|</span> 
+					<span itemprop="addressLocality">Someplace,</span>
+					<span itemprop="addressRegion">CA</span>
+					<span itemprop="postalCode">95876 </span><br/>
+					<span itemprop="telephone">1-888-644-9876 |</span>
+					<mark itemprop="email">email@spaghettisquashinc.com</mark>
 				</address>
 				<p><small>&copy;2016 Spaghetti Squash, Inc.</small></p>
 			</footer>
