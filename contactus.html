@@ -5,105 +5,109 @@
 			<title>Contact Us</title>
 			<link rel="stylesheet" href="main.css">
 		</head>
-		<body>
-			<header>
-				<h1>Spaghetti Squash, Inc.</h1>
-					<nav itemscope itemtype="http://schema.org">
-						<h2>Navigation</h2>
-						<ul>
-							<li itemprop="url"><a href="homepage.html">Home</a></li>
-							<li itemprop="url"><a href="recipes.html">Recipes</a></li>
-							<li itemprop="url"><a href="about.html">About Us</a></li>
-							<li itemprop="url"><a href="contactus.html">Contact Us</a></li>
-						</ul>
-					</nav>
-			</header>
-			<section>
-				<h2>Join Our Fan Club</h2>
-				<form class="subform" method="post" enctype="application/x-www-form-urlencoded" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
-							<fieldset class="mainfield">
-								<legend class="club">Spaghetti Squash Fan Club Signup</legend>
-								<fieldset class="contact">
-								<legend>Your Contact Information</legend>
-									<p>
-										<label for="firstName" class="label">First Name:</label>
-										<input name="First Name" id="firstName" type="text" required autofocus />
-									</p>
-									<p>
-										<label for="lastName" class="label">Last Name:</label>
-										<input name="Last Name" id="lastName" type="text" required />
-									</p>
-									<p>
-										<label for="email" class="label">E-mail:</label>
-										<input name="email" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="name@domain.com"/>
-									</p>
-									<p>
-										<label for="phone" class="label">Telephone:</label>
-										<input type="tel" name="phone" id="phone" placeholder="1-555-555-5555">
-									</p>
+		<body class="contactus">
+			<div id="pageWrapper">
+				<header>
+					<h1>Spaghetti Squash, Inc.</h1>
+						<nav itemscope itemtype="http://schema.org">
+							<h2>Navigation</h2>
+							<ul>
+								<li itemprop="url" id="homepage"><a href="homepage.html" class="homepage">Home</a></li>
+								<li itemprop="url"><a href="recipes.html" class="recipes">Recipes</a></li>
+								<li itemprop="url"><a href="about.html" class="about">About Us</a></li>
+								<li itemprop="url"><a href="contactus.html" class="contactus">Contact Us</a></li>
+							</ul>
+						</nav>
+				</header>
+			<hr>
+				<section>
+					<h2>Join Our Fan Club</h2>
+					<form class="subform" method="post" enctype="application/x-www-form-urlencoded" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+								<fieldset class="mainfield">
+									<legend class="club">Spaghetti Squash Fan Club Signup</legend>
+									<fieldset class="contact">
+									<legend>Your Contact Information</legend>
+										<p>
+											<label for="firstName" class="label">First Name:</label>
+											<input name="First Name" id="firstName" type="text" required autofocus />
+										</p>
+										<p>
+											<label for="lastName" class="label">Last Name:</label>
+											<input name="Last Name" id="lastName" type="text" required />
+										</p>
+										<p>
+											<label for="email" class="label">E-mail:</label>
+											<input name="email" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="name@domain.com"/>
+										</p>
+										<p>
+											<label for="phone" class="label">Telephone:</label>
+											<input type="tel" name="phone" id="phone" placeholder="1-555-555-5555">
+										</p>
+									</fieldset>
+									<fieldset class="background">
+									<legend>Tell Us About Yourself</legend>
+										<p>
+											<label for="bday" class="label">Birthdate:</label>
+											<input type="date" name="bday" id="bday">
+										</p>
+										<p><span class="label">Gender:</span>							
+											<label>
+												<input checked="checked" name="male" type="radio" />
+												Male</label>
+											<label>
+												<input name="female" type="radio" />
+												Female</label>
+										</p>
+										<p><span class="label">Favorite Mealtime:</span>							
+											<label>
+												<input name="mealtime" type="checkbox" value="breakfast" />
+												Breakfast</label>
+											<label>
+												<input name="mealtime" type="checkbox" value="lunch" />
+												Lunch</label>							
+											<label>
+												<input name="mealtime" type="checkbox" value="supper" />
+												Supper</label>
+										</p>
+										<p>						
+											<label for="recipe" class="label">Favorite Recipe:</label>
+												<input list="favrecipes" name="recipe" id="recipe">
+												  <datalist id="favrecipes">
+													<option value="Spaghetti Squash with Marinara">
+													<option value="Garlic Parmesan Spaghetti Squash">
+													<option value="Spaghetti Squash Stuffed with Tomato and Ground Beef">
+													<option value="Tuscan Spaghetti Squash">
+													<option value="Four-Cheese Spaghetti Squash">
+												  </datalist>
+										</p>
+										<p>						
+											<label for="comments"  class="label">Comments:</label>										
+											<textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+										</p>
+									</fieldset>
 								</fieldset>
-								<fieldset class="background">
-								<legend>Tell Us About Yourself</legend>
+								<div class="buttons">
 									<p>
-										<label for="bday" class="label">Birthdate:</label>
-										<input type="date" name="bday" id="bday">
+										<input type="submit" name="submit" value="Submit" class="submit"/>
+										|
+										<input type="reset" name="reset" value="Reset" class="reset"/>
 									</p>
-									<p><span class="label">Gender:</span>							
-										<label>
-											<input checked="checked" name="male" type="radio" />
-											Male</label>
-										<label>
-											<input name="female" type="radio" />
-											Female</label>
-									</p>
-									<p><span class="label">Favorite Mealtime:</span>							
-										<label>
-											<input name="mealtime" type="checkbox" value="breakfast" />
-											Breakfast</label>
-										<label>
-											<input name="mealtime" type="checkbox" value="lunch" />
-											Lunch</label>							
-										<label>
-											<input name="mealtime" type="checkbox" value="supper" />
-											Supper</label>
-									</p>
-									<p>						
-										<label for="recipe" class="label">Favorite Recipe:</label>
-											<input list="favrecipes" name="recipe" id="recipe">
-											  <datalist id="favrecipes">
-												<option value="Spaghetti Squash with Marinara">
-												<option value="Garlic Parmesan Spaghetti Squash">
-												<option value="Spaghetti Squash Stuffed with Tomato and Ground Beef">
-												<option value="Tuscan Spaghetti Squash">
-												<option value="Four-Cheese Spaghetti Squash">
-											  </datalist>
-									</p>
-									<p>						
-										<label for="comments"  class="label">Comments:</label>										
-										<textarea name="comments" id="comments" rows="4" cols="40"></textarea>
-									</p>
-								</fieldset>
-							</fieldset>
-							<div class="buttons">
-								<p>
-									<input type="submit" name="submit" value="Submit" class="submit"/>
-									|
-									<input type="reset" name="reset" value="Reset" class="reset"/>
-								</p>
-							</div>				
-						</form>
-					</section>
-			<footer itemscope itemtype="http://schema.org/LocalBusiness">
-				<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-					<span itemprop="name">Spaghetti Squash, Inc. |</span>
-					<span itemprop="streetAddress">8444 N Walker Ave|</span> 
-					<span itemprop="addressLocality">Someplace,</span>
-					<span itemprop="addressRegion">CA</span>
-					<span itemprop="postalCode">95876 </span><br/>
-					<span itemprop="telephone">1-888-644-9876 |</span>
-					<mark itemprop="email">email@spaghettisquashinc.com</mark>
-				</address>
-				<p><small>&copy;2016 Spaghetti Squash, Inc.</small></p>
-			</footer>
+								</div>				
+							</form>
+						</section>
+			<hr>
+				<footer itemscope itemtype="http://schema.org/LocalBusiness">
+					<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						<span itemprop="name">Spaghetti Squash, Inc. |</span>
+						<span itemprop="streetAddress">8444 N Walker Ave|</span> 
+						<span itemprop="addressLocality">Someplace,</span>
+						<span itemprop="addressRegion">CA</span>
+						<span itemprop="postalCode">95876 </span><br/>
+						<span itemprop="telephone">1-888-644-9876 |</span>
+						<mark itemprop="email">email@spaghettisquashinc.com</mark>
+					</address>
+					<p><small>&copy;2016 Spaghetti Squash, Inc.</small></p>
+				</footer>
+			</div>
 		</body>
 	</html>
