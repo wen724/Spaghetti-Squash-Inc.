@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+body {
+	background-color: #261D00;
+	color: #261D00;
+	font-size: 1em;
+	line-height: 1.9em;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#pageWrapper {
+	width: 998px;
+	margin: 0 auto;
+	background-color: #fce298;
+}
+p {
+	text-align: justify;	
+}
+
+/* -------Headings-------*/
+
+h1 {
+	font-size: 3.5em;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+h2 {
+	font-size: 2.5em;
+	clear: both;
+	text-align: center;
+}
+h3 {
+	font-size: 1.5em;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+h4 {
+	font-size: 1.1em;
+	padding-left: 25px;	
+}
+
+/* --------Navigation------- */
+
+nav ul {
+	width: 1000px;
+	top: 0;
+	list-style-type: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: #261D00;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+}
+nav li{
+	float: left;
+	width: 248px;
+	border-right: thin solid #fce298;
+	border-bottom: medium double #fce298;
+}
+nav a {
+	padding: 14px 16px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #fce298;
+}
+nav a:hover {
+	background-color: #fce298;
+	color: #261D00;
+}
+body.homepage a.homepage, body.recipes a.recipes, body.about a.about, body.contactus a.contactus {
+	background-color: #fce298;
+	color: #261D00; 	
+}
+#homepage {
+	border-left: thin solid #fce298;
+}
+
+/* ------Main Content----- */
+
+
+.section1 figure {
+	float: left;
+}
+.section2 figure, .section3 figure, .section4 figure, .section5 figure {
+	float: right;
+}
+.directions {
+	clear: both;	
+}
+.section3, .section4, .section5 {
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+.section6 p {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+.section1 p {
+	margin-right: 25px;	
+}
+hr {
+	clear: both;
+	border: medium double #261D00;
+}
+img {
+	border: medium solid #261D00;
+}
+
+/* ---------Footer--------- */
+
+footer {
+	text-align: center;
+}
+footer p {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+/* --------Form--------- */
+.label {
+	display: inline-block;
+	width: 250px;
+	vertical-align: top;
+	text-align: right;
+	margin-right: 10px;
+}
+form {
+	width: 750px;
+	margin: 0 auto;	
+}
+legend {
+	font-size: 1.1em;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 20px;
+}
+.buttons {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+.submit, .reset {
+	color: #fce298;
+	background-color: #261D00;
+	font-size: 20px;
+	padding: 2px 5px;
+	font-weight: bold;
+	border: hidden;
+	border-radius: 5px;
+}
+fieldset {
+	border: thick double #261D00;
+}
+.contact, .background {
+	margin: 20px;
+}
+#tfnewsearch{
+	float:right;
+	margin-right: -500px;	
+}
+.tftextinput4{
+	margin: 0;
+	padding: 6px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#666;
+	border:1px solid #261D00; 
+	border-right:0px;
+	border-top-left-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;	
+}
+.tfbutton4 {
+	margin: 0;
+	padding: 0;
+	width:28px;
+	height:28px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #261D00; 
+	border-right:0px;
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	background: #261D00;
+	vertical-align: top;
+}
+.tfbutton4::-moz-focus-inner {
+  border: 0;
+}
+.tfclear{
+	clear:both;
+}
+.audio audio {
+	padding-left: 40px;
+}
+.video p, .audio p {
+	padding-left: 40px;
+}
