@@ -4,23 +4,22 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			<title>Contact Us</title>
 			<link rel="stylesheet" href="main.css">
-            <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
 		</head>
 		<body class="contactus">
 			<div id="pageWrapper">
 				<header>
 					<h1>Spaghetti Squash, Inc.</h1>
-						<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+						<nav itemscope itemtype="http://schema.org">
 							<h2 hidden>Navigation</h2>
 							<ul>
-								<li itemprop="url" id="homepage"><a href="homepage.html" class="homepage">Home</a></li>
+								<li itemprop="url" id="homepage"><a href="index.html" class="homepage">Home</a></li>
 								<li itemprop="url"><a href="recipes.html" class="recipes">Recipes</a></li>
 								<li itemprop="url"><a href="about.html" class="about">About Us</a></li>
 								<li itemprop="url"><a href="contactus.html" class="contactus">Contact Us</a></li>
 							</ul>
 						</nav>
 				</header>
-
+                
                 <div id="tfheader">
 					<form id="tfnewsearch" method="get" action="#">
 		        		<input type="text" id="tfq" class="tftextinput4" name="q" value="Search our website">
@@ -28,7 +27,8 @@
 					</form>
 				<div class="tfclear"></div>
 				</div>
-				<div class="maincontent">
+            
+			<hr>
 				<section>
 					<h2>Join Our Fan Club</h2>
 					<form class="subform" method="post" enctype="application/x-www-form-urlencoded" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
@@ -82,11 +82,11 @@
 											<label for="recipe" class="label">Favorite Recipe:</label>
 												<input list="favrecipes" name="recipe" id="recipe">
 												  <datalist id="favrecipes">
-													<option value="Spaghetti Squash with Marinara"></option>
-													<option value="Garlic Parmesan Spaghetti Squash"></option>
-													<option value="Spaghetti Squash Stuffed with Tomato and Ground Beef"></option>
-													<option value="Tuscan Spaghetti Squash"></option>
-													<option value="Four-Cheese Spaghetti Squash"></option>
+													<option value="Spaghetti Squash with Marinara">
+													<option value="Garlic Parmesan Spaghetti Squash">
+													<option value="Spaghetti Squash Stuffed with Tomato and Ground Beef">
+													<option value="Tuscan Spaghetti Squash">
+													<option value="Four-Cheese Spaghetti Squash">
 												  </datalist>
 										</p>
 										<p>						
@@ -99,24 +99,23 @@
 									
 										<button type="submit" name="submit" value="Submit" class="submit" >Submit</button>
 										|
-                                        
 										<button type="reset" name="reset" value="Reset" class="reset" >Reset</button>
 									
 								</div>				
 							</form>
 						</section>
-			</div>
+			<hr>
 				<footer itemscope itemtype="http://schema.org/LocalBusiness">
 					<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 						<span itemprop="name">Spaghetti Squash, Inc. |</span>
-						<span itemprop="streetAddress">8444 N Walker Ave |</span> 
+						<span itemprop="streetAddress">8444 N Walker Ave|</span> 
 						<span itemprop="addressLocality">Someplace,</span>
 						<span itemprop="addressRegion">CA</span>
 						<span itemprop="postalCode">95876 </span><br/>
 						<span itemprop="telephone">1-888-644-9876 |</span>
-						<mark itemprop="email">email@spaghettisquashinc.com</mark><br/>
-                        <small>&copy;2016 Spaghetti Squash, Inc.</small>
+						<mark itemprop="email">email@spaghettisquashinc.com</mark>
 					</address>
+					<p><small>&copy;2016 Spaghetti Squash, Inc.</small></p>
 				</footer>
 			</div>
 		</body>

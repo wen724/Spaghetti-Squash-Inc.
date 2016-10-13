@@ -3,25 +3,24 @@
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			<title>Recipes</title>
-			<link rel="stylesheet" href="main.css"> 
-            <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">  
+			<link rel="stylesheet" href="main.css">
 		</head>
 		<body class="recipes">
 			<div id="pageWrapper">
 			
 				<header>
 					<h1>Spaghetti Squash, Inc.</h1>
-						<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+						<nav itemscope itemtype="http://schema.org">
 							<h2 hidden>Navigation</h2>
 							<ul>
-								<li itemprop="url" id="homepage"><a href="homepage.html" class="homepage">Home</a></li>
+								<li itemprop="url" id="homepage"><a href="index.html" class="homepage">Home</a></li>
 								<li itemprop="url"><a href="recipes.html" class="recipes">Recipes</a></li>
 								<li itemprop="url"><a href="about.html" class="about">About Us</a></li>
 								<li itemprop="url"><a href="contactus.html" class="contactus">Contact Us</a></li>
 							</ul>
 						</nav>
 				</header>
-
+				
                  <div id="tfheader">
 					<form id="tfnewsearch" method="get" action="http://www.google.com">
 		        		<input type="text" id="tfq" class="tftextinput4" name="q" value="Search our website">
@@ -29,12 +28,14 @@
 					</form>
 				<div class="tfclear"></div>
 				</div>
-			<div class="maincontent">
+            
+			<hr>
+			
 				<h2>Recipes</h2>
 				<section itemscope itemtype="http://schema.org/Recipe" class="section3">	
 					<h3 itemprop="name">Spaghetti Squash with Marinara</h3>
 					
-						<figure class="rotate_right">
+						<figure>
 							<img itemprop="image" src="images/spaghetti_squash_marinara.jpg" alt="Spaghetti squash topped with marinara sauce" title="Spaghetti squash topped with marinara sauce"/>
 							<figcaption>
 							<small>Spaghetti squash topped with marinara sauce.</small>
@@ -77,7 +78,7 @@
 				<section itemscope itemtype="http://schema.org/Recipe" class="section4">		
 					<h3 itemprop="name">Garlic Parmesan Spaghetti Squash</h3>
 						
-						<figure class="rotate_left">
+						<figure>
 							<img itemprop="image" src="images/spaghetti_squash_parmesan.jpg" alt="Spaghetti squash seasoned with garlic and parmesan" title="Spaghetti squash seasoned with garlic and parmesan"/>
 							<figcaption>
 							<small>Spaghetti squash seasoned with garlic and parmesan cheese.</small>
@@ -131,7 +132,7 @@
 				<section itemscope itemtype="http://schema.org/Recipe" class="section5">
 					<h3 itemprop="name">Spaghetti Squash Stuffed with Tomato and Ground Beef</h3>
 					
-						<figure class="rotate_right">
+						<figure>
 							<img itemprop="image" src="images/spaghetti_squash_tomato_beef.jpg" alt="Spaghetti squash stuffed with tomato and beef" title="Spaghetti squash stuffed with tomato and beef" />
 							<figcaption>
 							<small>Spaghetti squash halves stuffed with tomato and ground beef.</small>
@@ -173,18 +174,20 @@
 								</ol>
 						</div>		
 				</section>
-			</div>
+				
+			<hr>
+				
 				<footer itemscope itemtype="http://schema.org/LocalBusiness">
 					<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 						<span itemprop="name">Spaghetti Squash, Inc. |</span>
-						<span itemprop="streetAddress">8444 N Walker Ave |</span> 
+						<span itemprop="streetAddress">8444 N Walker Ave|</span> 
 						<span itemprop="addressLocality">Someplace,</span>
 						<span itemprop="addressRegion">CA</span>
 						<span itemprop="postalCode">95876 </span><br/>
 						<span itemprop="telephone">1-888-644-9876 |</span>
-						<mark itemprop="email">email@spaghettisquashinc.com</mark><br/>
-                        <small>&copy;2016 Spaghetti Squash, Inc.</small>
+						<mark itemprop="email">email@spaghettisquashinc.com</mark>
 					</address>
+					<p><small>&copy;2016 Spaghetti Squash, Inc.</small></p>
 				</footer>
 			</div>
 		</body>
