@@ -1,12 +1,8 @@
 @charset "utf-8";
 
 @font-face {
-	font-family: headerFont;
-	src: url(font/fibography.eot);
-	src: url(font/fibography.woff2),
-		 url(font/fibography.woff),
-		 url(font/fibography.ttf),
-		 url(font/fibography.svg);		
+	font-family: headingsFont;
+	src: url(font2/DiavloBlack.otf);
 }
 body {
 	color: black;
@@ -20,6 +16,7 @@ body {
 	background-color: #016053;
 	background-attachment: fixed;
 }
+
 #pageWrapper {
 	width: 999px;
 	margin: 0 auto;
@@ -32,33 +29,33 @@ p {
 /* -------Headings-------*/
 
 header {
-	height: 250px;
-	background-size: cover;
-	background-repeat: repeat;
+	margin-top: 40px;
+	height: 300px;
+	background-repeat: no-repeat;
 	border-bottom: thick double #261D00;
-}
-h1 {
-	color: #016053;
-	font-size: 5.5em;
-	text-align: center;
-	padding-top: 40px;
-	font-family: headerFont;
-	line-height: 1em;	
+	background-image: url(images/logo.png);
 }
 h2 {
-	font-size: 2.5em;
+	font-size: 3em;
 	clear: both;
 	text-align: center;
 	text-shadow: 2px 2px #907E41;
+	font-family: headingsFont;
 }
 h3 {
-	font-size: 1.5em;
+	font-size: 2em;
 	padding-left: 25px;
 	padding-bottom: 10px;
+	font-family: headingsFont;
 }
 h4 {
+	font-size: 1.5em;
+	padding-left: 25px;
+	font-family: headingsFont;	
+}
+h5 {
 	font-size: 1.1em;
-	padding-left: 25px;	
+	font-family: headingsFont;
 }
 
 /* --------Navigation------- */
@@ -106,7 +103,7 @@ body.homepage a.homepage, body.recipes a.recipes, body.about a.about, body.conta
 	padding-left: 25px;	
 	padding-bottom: 15px;
 }
-.resources a {
+.resources a, .video1 a, .video2 a, .audiodownload a {
 	text-decoration: none;
 	border: thin solid #016053;
 	background: #016053;
@@ -124,7 +121,7 @@ body.homepage a.homepage, body.recipes a.recipes, body.about a.about, body.conta
 	transition-duration: .2s, 1s;
 	transition-timing-function: linear, ease-in;
 }
-.resources a:hover {
+.resources a:hover, .video1 a:hover, .video2 a:hover, .audiodownload a:hover {
 	background: #fce298;
 	color: #016053;
 	border-radius: 50%;
@@ -152,16 +149,12 @@ body.homepage a.homepage, body.recipes a.recipes, body.about a.about, body.conta
 .section6 p {
 	margin-right: 25px;
 	margin-left: 25px;
-	background-color: white;
-	opacity: 0.85;
-	-webkit-box-shadow: 7px 7px 5px 0 #261D00;
-	box-shadow: 7px 7px 5px 0 #261D00;
-	border-radius: 20px;
 	padding: 15px 25px;
 	line-height: 2em;
 }
 .section1 p {
-	margin-right: 25px;	
+	margin-right: 25px;
+	border-radius: 25px;
 }
 figure img {
 	width: 400px;
@@ -290,6 +283,48 @@ fieldset {
 .audio audio {
 	padding-left: 40px;
 }
-.video p, .audio p {
+.audio p {
 	padding-left: 40px;
+}
+.video2 h4 {
+	margin-left: 250px;
+}
+.video1 li, .video2 li {
+	margin-top: 20px;
+}
+.audio {
+	clear: both;
+}
+video {
+	background-color: white;
+	padding-top: 25px;
+	border: 2px solid #016053;
+	box-shadow: 10px 10px 5px #261D00;
+}
+.video1 {
+	margin-left: 75px;
+}
+.video2 {
+	float: right;
+	margin-right: 75px;
+	margin-top: 75px;
+}
+.video1download {
+	float: right;
+	margin-right: 250px;
+	text-align: center;
+}
+.video2download {
+	float: left;
+	margin-right: 100px;
+	text-align: center;
+}
+.video1download li, .video2download li, .audiodownload li {
+	list-style-type: none;
+}
+.audiodownload li {
+	display: inline;
+}
+.audiodownload h5 {
+	margin-left: 50px;
 }
